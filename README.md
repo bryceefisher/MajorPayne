@@ -11,7 +11,7 @@ To use this bot, you will need the following:
 - A Discord bot token
 - Openai key
 
-Replace Settings:Discord:token and Settings:Openai:key in appsettins.json with your actual Discord bot token and ChatGPT API key, respectively. appsettings.json is located in MajorPayne > bin > Debug > net6.0.
+Replace Settings:Discord:token and Settings:Openai:key in appsettings.json with your actual Discord bot token and ChatGPT API key, respectively. appsettings.json is located in MajorPayne > bin > Debug > net6.0.
 
 ## Usage
 
