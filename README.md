@@ -9,23 +9,9 @@ Discord API and the [RestSharp](https://github.com/restsharp/RestSharp) library 
 To use this bot, you will need the following:
 
 - A Discord bot token
-- An OpenAI ChatGPT API key
+- Openai key
 
-Once you have these, you can clone this repository and build the project using the `dotnet` command, like this:
-
-Copy code
-
-`git clone https://github.com/omgitsjan/DiscordBot
-cd DiscordBot
-dotnet restore
-dotnet build`
-
-Next, you need to specify the environment variables for the Discord bot token and ChatGPT API key when starting the bot.
-For example:
-
-Dont forget to change the static variables in Program.cs and OpenAiService.cs.
-
-Replace `DiscordToken` and `ChatGptApiKey` with your actual Discord bot token and ChatGPT API key, respectively.
+Replace Settings:Discord:token and Settings:Openai:key in appsettins.json with your actual Discord bot token and ChatGPT API key, respectively. appsettings.json is located in MajorPayne > bin > Debug > net6.0.
 
 ## Usage
 
