@@ -9380,27 +9380,28 @@
     ]
   },
   "packageFolders": {
-    "/Users/bryce/.nuget/packages/": {}
+    "/Users/devinfreeman/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bryce/RiderProjects/MajorPayne/MajorPayne/MajorPayne.csproj",
+      "projectUniqueName": "/Users/devinfreeman/Documents/discord/Collaberation/MajorPayne/MajorPayne/MajorPayne.csproj",
       "projectName": "MajorPayne",
-      "projectPath": "/Users/bryce/RiderProjects/MajorPayne/MajorPayne/MajorPayne.csproj",
-      "packagesPath": "/Users/bryce/.nuget/packages/",
-      "outputPath": "/Users/bryce/RiderProjects/MajorPayne/MajorPayne/obj/",
+      "projectPath": "/Users/devinfreeman/Documents/discord/Collaberation/MajorPayne/MajorPayne/MajorPayne.csproj",
+      "packagesPath": "/Users/devinfreeman/.nuget/packages/",
+      "outputPath": "/Users/devinfreeman/Documents/discord/Collaberation/MajorPayne/MajorPayne/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/bryce/.nuget/NuGet/NuGet.Config"
+        "/Users/devinfreeman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "/Users/devinfreeman/Desktop": {},
+        "/Users/devinfreeman/Downloads": {},
         "/usr/local/share/dotnet/library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://www.myget.org/F/discord-net/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -9475,7 +9476,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }

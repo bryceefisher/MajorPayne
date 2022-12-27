@@ -11,6 +11,11 @@ global using Discord.Commands;
 global using Discord.WebSocket;
 global using Discord.Interactions;
 
+global using MajorPayne;
+global using MajorPayne.Handlers;
+global using MajorPayne.Service;
+
+global using OpenAI_API;
 
 global using System.Runtime.InteropServices;
 
@@ -26,8 +31,4 @@ global using Microsoft.AspNetCore.Diagnostics;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.AspNetCore.Mvc.RazorPages;
 
-using System.Net;
-using Discord.WebSocket;
-using Newtonsoft.Json;
-using RestSharp;
-using JsonSerializer = System.Text.Json.JsonSerializer;
+global using System.Text.Json;

@@ -1,0 +1,7 @@
+/appsettings.*
+.*env
+.DS_Store
+/bin*
+/debug*
+logs
+*.vs
