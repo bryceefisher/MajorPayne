@@ -1,24 +1,34 @@
-﻿using System.Net;
+﻿using System.Linq.Expressions;
+using System.Net;
+using Discord;
 using Discord.WebSocket;
 using Newtonsoft.Json;
 using RestSharp;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 
-namespace DiscordBot.Service;
+namespace MajorPayne.Service;
 
 public class OpenAiService
 {
-//Url to the ChatGpt Api
+    //Url to the ChatGpt Api
     private const string ChatGptApiUrl = "https://api.openai.com/v1/completions";
 
-//Url to the
+    //Url to the
     private const string DalleApiUrl = "https://api.openai.com/v1/images/generations";
+    // About the use of var
+    //    If the type of the variable is not immediately clear from the expression used to initialize it, it can make the code harder to understand.In this case, it might be a good idea to use an explicit type instead of var.
 
+    //If you are using var to declare a variable that is initialized with a null value, you might want to consider using an explicit type instead, as the type of the variable will not be inferred in this case.
 
-//The method uses the RestClient class to send a request to the ChatGPT API, passing the user's message as the
-//prompt and sends the response into the Chat
+    //If you are using var to declare a variable that is initialized with a complex expression or lambda, you might want to consider using an explicit type instead, as the type of the variable will not be inferred in this case.
+
+    //the OpenAi_API library has most of this functionality built in.
+
+    //The method uses the RestClient class to send a request to the ChatGPT API, passing the user's message as the
+    //prompt and sends the response into the Chat
     internal static async Task<Tuple<bool, string>> ChatGpt(SocketMessage message)
     {
+        // this was done in Program. you need a constructor to inject the services.
         var configuration = new ConfigurationBuilder()
             .AddEnvironmentVariables(prefix: "CG_")
             .AddJsonFile("appsettings.json")
@@ -75,15 +85,15 @@ public class OpenAiService
         return new Tuple<bool, string>(success, responseText);
     }
 
-//The method uses the RestClient class to send a request to the Dall-E API, passing the user's message as the
-//prompt and sends an image to the Chat
+    //The method uses the RestClient class to send a request to the Dall-E API, passing the user's message as the
+    //prompt and sends an image to the Chat
     internal static async Task<Tuple<bool, string>> DallE(SocketMessage message)
     {
         var configuration = new ConfigurationBuilder()
             .AddEnvironmentVariables(prefix: "CG_")
             .AddJsonFile("appsettings.json")
             .Build();
-        
+
         // Create a new RestClient instance
         var client = new RestClient(DalleApiUrl);
 
